@@ -1,0 +1,67 @@
+// src/components/Footer.js
+import React from 'react';
+
+function Footer() {
+    const styles = {
+        footer: {
+          backgroundColor: '#0073e6',
+          color: '#fff',
+          padding: '20px',
+          textAlign: 'center',
+        },
+        scheduleBtn: {
+          padding: '10px 20px',
+          backgroundColor: '#fff',
+          color: '#0073e6',
+          border: 'none',
+          cursor: 'pointer',
+        },
+        footerBottom: {
+          display: 'flex',
+          justifyContent: 'space-between',
+          padding: '20px',
+          marginTop: '20px',
+        },
+        socialIcons: {
+          display: 'flex',
+          gap: '10px',
+        },
+        footerLinks: {
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '10px',
+        },
+      };
+      
+  return (
+    <footer style={styles.footer}>
+      <h2>Come say hello</h2>
+      <button style={styles.scheduleBtn}>View weekly schedule</button>
+      <div style={styles.footerBottom}>
+        <div>
+          <h3>Logo</h3>
+          <div style={styles.socialIcons}>
+            <span>🌐</span>
+            <span>🐦</span>
+            <span>📸</span>
+          </div>
+          <div>
+            <input type="text" placeholder="Sign up for our newsletter!" />
+            <button>Sign up</button>
+          </div>
+        </div>
+        <div style={styles.footerLinks}>
+          <p>Menu</p>
+          <p>Schedule</p>
+          <p>Contact</p>
+          <p>Privacy policy</p>
+          <p>About</p>
+          <p>Catering</p>
+        </div>
+      </div>
+      <p>© Example 2023. All Rights Reserved.</p>
+    </footer>
+  );
+}
+
+export default Footer;

@@ -1,0 +1,90 @@
+// src/components/Header.js
+import React from 'react';
+
+function Header() {
+    const styles = {
+        header: {
+          backgroundColor: '#e6f2ff',
+          paddingBottom: '20px',
+        },
+        headerTop: {
+          display: 'flex',
+          justifyContent: 'space-between',
+          padding: '10px 20px',
+          backgroundColor: '#0073e6',
+          color: '#fff',
+        },
+        contactInfo: {
+          display: 'flex',
+          gap: '20px',
+        },
+        timing: {
+          display: 'flex',
+          alignItems: 'center',
+        },
+        navbar: {
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '10px 20px',
+          backgroundColor: '#e6f2ff',
+        },
+        logo: {
+          color: '#0073e6',
+        },
+        navLinks: {
+          display: 'flex',
+          gap: '20px',
+          listStyleType: 'none',
+        },
+        buttons: {
+          display: 'flex',
+          gap: '10px',
+        },
+        reservationBtn: {
+          padding: '10px 20px',
+          backgroundColor: '#fff',
+          border: '2px solid #0073e6',
+          color: '#0073e6',
+          cursor: 'pointer',
+        },
+        orderBtn: {
+          padding: '10px 20px',
+          backgroundColor: '#0073e6',
+          border: 'none',
+          color: '#fff',
+          cursor: 'pointer',
+        },
+      };
+      
+  return (
+    <header style={styles.header}>
+      <div style={styles.headerTop}>
+        <div style={styles.contactInfo}>
+          <span>📞 (316) 555-0116</span>
+          <span>✉️ order@example.com</span>
+        </div>
+        <div style={styles.timing}>
+          <span>🕒 08:00 am - 10:30 pm</span>
+        </div>
+      </div>
+      <nav style={styles.navbar}>
+        <h1 style={styles.logo}>Neerob</h1>
+        <ul style={styles.navLinks}>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>Schedule</li>
+          <li>Packages</li>
+          <li>Catering</li>
+          <li>About</li>
+        </ul>
+        <div style={styles.buttons}>
+          <button style={styles.reservationBtn}>RESERVATION</button>
+          <button style={styles.orderBtn}>ORDER NOW</button>
+        </div>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
